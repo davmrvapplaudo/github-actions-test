@@ -17,10 +17,10 @@ class ExampleTest extends TestCase
         $response->assertStatus(200);
     }
 
-    public function test_sees_welcome_on_the_application(): void
+    public function test_sees_github_actions_demo_text(): void
     {
         $response = $this->get('/');
 
-        $response->assertSee('Welcome');
+        $response->assertSee('Github Actions Demo');
     }
 }
