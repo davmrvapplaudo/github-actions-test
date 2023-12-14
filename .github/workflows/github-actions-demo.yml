@@ -1,0 +1,17 @@
+name: Run Unit Tests on Push
+run-name: Run Unit Tests on Push
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup PHP Action
+        uses: shivammathur/setup-php@2.28.0
+      - run: composer install
+      - run: cp .env.example .env
+      - run: php artisan key:generate
+      - run: vendor/bin/phpunit
