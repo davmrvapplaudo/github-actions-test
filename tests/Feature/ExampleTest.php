@@ -16,4 +16,11 @@ class ExampleTest extends TestCase
 
         $response->assertStatus(200);
     }
+
+    public function test_sees_welcome_on_the_application(): void
+    {
+        $response = $this->get('/');
+
+        $response->assertSee('Welcome');
+    }
 }
