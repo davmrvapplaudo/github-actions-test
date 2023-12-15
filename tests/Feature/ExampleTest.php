@@ -16,4 +16,11 @@ class ExampleTest extends TestCase
 
         $response->assertStatus(200);
     }
+
+    public function test_sees_github_actions_demo_text(): void
+    {
+        $response = $this->get('/');
+
+        $response->assertSee('Github Actions Demo');
+    }
 }
