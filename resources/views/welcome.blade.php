@@ -10,7 +10,7 @@
 <body>
     <div class="container mx-auto">
         <div class="p-8">
-            <h1 class="text-xl font-bold">Github Actions Demo</h1>
+            <h1 class="text-xl font-bold">Github Another Test</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem cupiditate, labore, minima numquam illo asperiores molestias eius non error quae est dolore quas harum laboriosam dolorum nam ut, libero sapiente!</p>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam assumenda adipisci iure? Tenetur repudiandae corrupti ullam enim quisquam voluptatibus molestiae dolorum consequatur dolor? Exercitationem, omnis ab in non commodi dolores?</p>
         </div>
