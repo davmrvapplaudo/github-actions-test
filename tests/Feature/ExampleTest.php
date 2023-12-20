@@ -21,6 +21,6 @@ class ExampleTest extends TestCase
     {
         $response = $this->get('/');
 
-        $response->assertSee('Github home');
+        $response->assertSee('Github Another Test');
     }
 }
